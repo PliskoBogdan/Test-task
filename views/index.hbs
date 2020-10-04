@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>Test</h4>
+            <ul class="navigaiton__wrapper">
+                <li class="navigaiton__items"><a href="/" class="navigaiton__items__links">Home</a></li>
+                <li class="navigaiton__items"><a href="/login" class="navigaiton__items__links">Login</a></li>
+                <li class="navigaiton__items"><a href="/register" class="navigaiton__items__links">Register</a></li>
+                <li class="navigaiton__items"><a href="/logout" class="navigaiton__items__links">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ <div class="container mt-4">
+        <div class="users__wrapper">
+            <ul>    
+                <h3>Name</h3>
+                {{#if name}}
+                    {{#each name}}
+                        <li class="users__item">{{this}}</li>
+                    {{/each}}                   
+                {{/if}}
+            </ul>
+            <ul>    
+                <h3>Login</h3>
+                {{#if login}}
+                    {{#each login}}
+                        <li>{{this}}</li>
+                    {{/each}}                   
+                {{/if}}
+            </ul>
+        </div>
+    </div>
+    
+   
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+</body>
+</html>
